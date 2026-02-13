@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:petstore_app/screens/add_pet_screen.dart';
-import 'package:petstore_app/screens/home_screen.dart';
-import 'package:petstore_app/screens/pet_detail_screen.dart';
+import 'package:petstore_app/features/pet_add/ui/add_pet_screen.dart';
+import 'package:petstore_app/features/home/ui/home_screen.dart';
+import 'package:petstore_app/features/pet_detail/ui/pet_detail_screen.dart';
 import 'package:petstore_app/theme/app_theme.dart';
 
 void main() {
