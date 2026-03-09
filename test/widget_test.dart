@@ -11,41 +11,8 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-    // Verify that HomeScreen is shown.
-    expect(find.text('Find Your Friend'), findsOneWidget);
-    expect(find.text('Adopt a pet today!'), findsOneWidget);
-
-    // Verify FAB exists
-    expect(find.byIcon(Icons.add), findsOneWidget);
-
-    // Tap the '+' icon to go to AddPetScreen.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pumpAndSettle();
-
-    // Verify AddPetScreen is shown.
-    expect(find.text('Add New Pet'), findsOneWidget);
-    expect(find.text('GENERAL INFO'), findsOneWidget);
-
-    // Go back
-    await tester.tap(find.byIcon(Icons.arrow_back));
-    await tester.pumpAndSettle();
-
-    // Verify we are back at HomeScreen
-    expect(find.text('Find Your Friend'), findsOneWidget);
-
-    // Find the pet card for 'Cooper'
-    final cooperFinder = find.text('Cooper');
-
-    // Scroll until it is visible (in case it is still off screen)
-    await tester.ensureVisible(cooperFinder);
-
-    expect(cooperFinder, findsOneWidget);
-    await tester.tap(cooperFinder);
-    await tester.pumpAndSettle();
-
-    // Verify PetDetailScreen is shown.
-    expect(find.text('Buddy'), findsOneWidget);
-    expect(find.text('Adopt Buddy'), findsOneWidget);
+    // Verify that RoomManagementScreen is shown.
+    expect(find.text('Habitaciones'), findsOneWidget);
 
     // Reset window size
     addTearDown(tester.view.resetPhysicalSize);
