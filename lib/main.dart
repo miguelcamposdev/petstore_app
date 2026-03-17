@@ -4,6 +4,7 @@ import 'package:petstore_app/features/home/ui/home_screen.dart';
 import 'package:petstore_app/features/pet_detail/ui/pet_detail_screen.dart';
 import 'package:petstore_app/features/incident_add/ui/add_incident_screen.dart';
 import 'package:petstore_app/features/organization_add/ui/add_organization_screen.dart';
+import 'package:petstore_app/features/needs/ui/needs_screen.dart';
 import 'package:petstore_app/theme/app_theme.dart';
 
 void main() {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/add': (context) => const AddPetScreen(),
         '/add_incident': (context) => const AddIncidentScreen(),
         '/add_organization': (context) => const AddOrganizationScreen(),
+        '/needs': (context) => const NeedsScreen(),
       },
     );
   }
